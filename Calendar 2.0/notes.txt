@@ -1,0 +1,19 @@
+
+Features:
+    Backend:
+        Database
+        Login authentication
+    Frontend:
+        Time until each event in "upNext"
+        ToDo List:
+            Checklist style
+            Optionally repeatable (weekly, fortnitely, etc...)
+            At the forefront as to not be missed
+            Rankable in terms of importance
+
+Improvable:
+    click events for classes (include subsequent duration timeslots)
+    text within classes overlapping
+    Task saving will have to become asynchronous 
+
+Other:

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendar</title>
+
+        <link rel="icon" type="image/x-icon" href="icon.png">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/calendar.css">
+        <link rel="stylesheet" type="text/css" href="css/timetable.css">
+        <link rel="stylesheet" type="text/css" href="css/menus.css">
+        <meta http-equiv="refresh" content="300">
+    </head>
+    <body>
+        <div id="settingsMenu">
+            <h2>Settings</h2>
+            <button id="defaultWeeksButton">Default Weeks</button>
+            <button id="clearWeeksButton">Clear Week Names</button>
+            <p>Start and end dates for the calendar:</p>
+            <input id="startDateInput" placeholder="Start Date (dd/mm)">
+            <input id="endDateInput" placeholder="End Date (dd/mm)">
+            <p>Time range for the timetable:</p>
+            <input id="timeRangeInput" placeholder="Time Range (start-finish)">
+            <button id="saveSettingsButton">Save</button>
+            <button id="closeSettingsButton">Close</button>
+        </div>
+
+        <div id="calendar">
+            <div id="calendar_weekdays">
+                <div id="settingsButton"><img src="gear.png" alt="Settings"></div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+                <div>Sun</div>
+            </div>
+
+            <div id="calendar_main">
+                <div id="months"></div>
+                <div id="weeks"></div>
+                <div id="days"></div>
+            </div>
+
+        </div>
+
+        <div id="dayViewer">
+            <h2 id="dayHeader"></h2>
+            <div id="eventList"></div>
+            <button id="newEventButton">New</button>
+            <button id="closeDayViewerButton">Close</button>
+        </div>
+
+
+        <div id="timetable">
+            <div id="timetable_weekdays">
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+                <div>Sun</div>
+            </div>
+
+            <div id="timetable_days"></div>
+
+            <div id="planner"></div>
+        </div>
+
+        <div id="classViewer">
+            <h2 id="classTitle"></h2>
+            <p id="classDescription"></p>
+            <button id="editClassButton">Edit</button>
+            <button id="closeClassButton">Close</button>
+        </div>
+
+        <div id="weekViewer">
+            <input id="weekNameInput" placeholder="Week Name">
+        </div>
+
+        <div id="upNextTab">\/ Up Next \/</div>
+
+        <script src="./js/utility.js"></script>
+        <script src="./js/calendar.js"></script>
+        <script src="./js/timetable.js"></script>
+        <script src="./js/menus.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

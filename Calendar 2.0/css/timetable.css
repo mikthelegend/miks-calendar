@@ -1,0 +1,65 @@
+#timetable {
+    left: 490px;
+}
+#timetable_weekdays {
+    display: flex;
+}
+#timetable_weekdays div {
+    width: 170px;
+    height: 50px;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px;
+    text-align: center;
+    background-color: #ffd394;
+}
+#timetable_days {
+    display: flex;
+}
+.dayColumn {
+    width: 170px;
+    height: auto;
+    margin: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.timeSlot {
+    width: 170px;
+    height: 50px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border-top: 1px dashed grey;
+    overflow:visible;
+}
+.timeSlot:hover {
+    background-color: #D3D3D3;
+}
+#classNameInput {
+    width: 50%;
+    font-family: monospace;
+    border: 0;
+}
+#planner {
+    display: flex;
+}
+.plannerSlot {
+    width: 170px;
+    height: 230px;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px;
+    background-color: #ffd394;
+    overflow: scroll;
+}
+.plannerButton {
+    width: 62px;
+    margin-right: 5px;
+}
+.plannerItem {
+    width: 122px;
+    margin-top: 5px;
+}
